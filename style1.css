@@ -1,0 +1,71 @@
+:root {
+    --my-titolo: #D91828;
+    --my_paragrafi: #d68d39;
+    --my-bg-primario: #0AA631;
+    --my-bg-secondario: #0B8C2B;
+    --my-color-white : #ffffff;
+   
+   
+   
+   }
+   
+   
+   
+   
+   
+   nav{
+   
+       background-color:#0B8C2B;
+   };
+   
+   h1,h2,h3,h4,h5,h6 {
+   
+       font-family: "Montserrat", sans-serif;
+   
+   }
+   
+   
+   
+   p,ul { 
+   
+       font-family: "Open Sans", sans-serif;
+       color: var(--my_paragrafi);
+   }
+   
+   
+   h1,h2,h3,h4,h5,h6 {
+   
+       font-family: "Montserrat", sans-serif;
+       color: var(--my-titolo)
+   }
+   
+   
+   /* header /
+   
+   
+   
+   .mia_dim_logo {
+   
+       font-size: 4rem;
+   };
+   
+   / fine header */
+   
+   .player { width: 100px; height: 50px; border: 1px solid #d5b11d; }
+   .position { width: 100px; height: 50px; border: 1px solid #942a2a; }
+   
+   #availablePlayers, #formation {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   
+   .player, .position {
+       flex: 1 0 auto;
+   }
+   
+   .panchina{
+   
+       font-size: 12px;
+   }
+
