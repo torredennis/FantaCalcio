@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#team-roster, #starting-eleven, #bench {
+    display: grid;
+    gap: 10px;
+}
+
+#team-roster {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#starting-eleven {
+    grid-template-areas: 
+        "goalkeeper"
+        "defenders"
+        "midfielders"
+        "forwards";
+    grid-gap: 10px;
+}
+
+#goalkeeper-starter {
+    grid-area: goalkeeper;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#defenders-starter {
+    grid-area: defenders;
+    display: grid;
+}
+
+#midfielders-starter {
+    grid-area: midfielders;
+    display: grid;
+}
+
+#forwards-starter {
+    grid-area: forwards;
+    display: grid;
+}
+
+#bench {
+    grid-template-columns: 1fr;
+}
+
+.player-group {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+#formation-display {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.player-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-item {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-item:hover {
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
